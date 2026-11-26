@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shopping cart · Bug Hunt Lab</title>
+<link rel="stylesheet" href="/css/lab.css">
+</head>
+<body>
+<main>
+<h1>Shopping cart</h1>
+<div class="task">Rules: quantity is at least 1 (use Remove to delete) · code <b>SAVE10</b> takes 10% off the subtotal, once · 8.25% sales tax on the discounted amount, rounded to the nearest cent.</div>
+<table>
+  <thead><tr><th>Item</th><th class="num">Price</th><th class="num">Qty</th><th class="num">Line total</th><th></th></tr></thead>
+  <tbody id="items"></tbody>
+</table>
+<div class="row" style="margin-top:1rem">
+  <label for="code" style="margin:0">Discount code</label>
+  <input id="code" type="text" style="max-width:160px">
+  <button type="button" id="apply">Apply</button>
+  <span id="code-message" role="status" data-testid="code-message"></span>
+</div>
+<table style="max-width:320px;margin-top:1rem">
+  <tr><td>Subtotal</td><td class="num" data-testid="subtotal"></td></tr>
+  <tr><td>Discount</td><td class="num" data-testid="discount"></td></tr>
+  <tr><td>Tax (8.25%)</td><td class="num" data-testid="tax"></td></tr>
+  <tr><th>Total</th><th class="num" data-testid="total"></th></tr>
+</table>
+</main>
+<script type="module" src="/js/cart.js"></script>
+</body>
+</html>

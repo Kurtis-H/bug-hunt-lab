@@ -1,0 +1,28 @@
+[
+  { "id": "SIGNUP-1", "challenge": "signup", "category": "validation", "difficulty": 1, "hint": "Not everything with an @ in it is an email address." },
+  { "id": "SIGNUP-2", "challenge": "signup", "category": "boundary", "difficulty": 1, "hint": "Read the password rule carefully, then test exactly at the limit." },
+  { "id": "SIGNUP-3", "challenge": "signup", "category": "state", "difficulty": 2, "hint": "Make a mistake, then fix it. Does the page notice?" },
+  { "id": "SIGNUP-4", "challenge": "signup", "category": "state", "difficulty": 2, "hint": "Impatient users click twice." },
+
+  { "id": "CART-1", "challenge": "cart", "category": "calculation", "difficulty": 2, "hint": "Work out the total by hand, to the cent." },
+  { "id": "CART-2", "challenge": "cart", "category": "state", "difficulty": 1, "hint": "What if someone applies the same code again?" },
+  { "id": "CART-3", "challenge": "cart", "category": "boundary", "difficulty": 1, "hint": "How low can a quantity go?" },
+  { "id": "CART-4", "challenge": "cart", "category": "data", "difficulty": 2, "hint": "Two different items can share a name." },
+
+  { "id": "TABLE-1", "challenge": "table", "category": "sorting", "difficulty": 1, "hint": "Sort every column and check the order really is right." },
+  { "id": "TABLE-2", "challenge": "table", "category": "boundary", "difficulty": 2, "hint": "Count every product across all the pages." },
+  { "id": "TABLE-3", "challenge": "table", "category": "search", "difficulty": 1, "hint": "People don't always type with the same capitalization." },
+  { "id": "TABLE-4", "challenge": "table", "category": "api", "difficulty": 2, "hint": "Call the API directly with values the UI would never send." },
+
+  { "id": "DATES-1", "challenge": "dates", "category": "calculation", "difficulty": 1, "hint": "Try a birthday that hasn't happened yet this year." },
+  { "id": "DATES-2", "challenge": "dates", "category": "boundary", "difficulty": 2, "hint": "Some months are shorter than others." },
+  { "id": "DATES-3", "challenge": "dates", "category": "timezone", "difficulty": 3, "hint": "Not all of your users live in UTC." },
+
+  { "id": "SEARCH-1", "challenge": "search", "category": "async", "difficulty": 3, "hint": "Type, pause, type more. What's on screen once everything settles?" },
+  { "id": "SEARCH-2", "challenge": "search", "category": "performance", "difficulty": 2, "hint": "Watch the network while you type." },
+  { "id": "SEARCH-3", "challenge": "search", "category": "error-handling", "difficulty": 1, "hint": "What happens when the server fails?" },
+
+  { "id": "A11Y-1", "challenge": "a11y", "category": "accessibility", "difficulty": 1, "hint": "Put your mouse away." },
+  { "id": "A11Y-2", "challenge": "a11y", "category": "accessibility", "difficulty": 1, "hint": "What would a screen reader announce for each field?" },
+  { "id": "A11Y-3", "challenge": "a11y", "category": "accessibility", "difficulty": 2, "hint": "Open the dialog with a keyboard. Then try to leave it." }
+]

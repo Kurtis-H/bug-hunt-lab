@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live search · Bug Hunt Lab</title>
+<link rel="stylesheet" href="/css/lab.css">
+</head>
+<body>
+<main>
+<h1>Live search</h1>
+<div class="task">Rules: results always match what's in the box · don't flood the server while someone is typing · if the server fails, say so and stop loading. <br><small>Tip: searching for <code>error</code> makes the API return a 500, so you can test failures.</small></div>
+<label for="search">Search fruit</label>
+<div class="row"><input id="search" type="text" autocomplete="off" style="max-width:300px"><span class="spinner" id="spinner" data-testid="spinner" hidden></span></div>
+<p class="error" id="search-error" role="alert" data-testid="search-error"></p>
+<ul id="results" data-testid="results"></ul>
+</main>
+<script type="module" src="/js/search.js"></script>
+</body>
+</html>

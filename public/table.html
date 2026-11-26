@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product table · Bug Hunt Lab</title>
+<link rel="stylesheet" href="/css/lab.css">
+</head>
+<body>
+<main>
+<h1>Product table</h1>
+<div class="task">Rules: search matches product names, ignoring capitalization · clicking a column header sorts the current page · every product is reachable through the pages. API: <code>GET /api/products?page=1&amp;size=5&amp;q=</code></div>
+<div class="row"><label for="q" style="margin:0">Search</label><input id="q" type="text" style="max-width:240px"></div>
+<table style="margin-top:1rem">
+  <thead><tr>
+    <th><button type="button" data-sort="name">Name</button></th>
+    <th><button type="button" data-sort="category">Category</button></th>
+    <th class="num"><button type="button" data-sort="price">Price</button></th>
+  </tr></thead>
+  <tbody id="rows"></tbody>
+</table>
+<div class="row" style="margin-top:1rem">
+  <button type="button" class="secondary" id="prev">Previous</button>
+  <span data-testid="page-info" id="page-info"></span>
+  <button type="button" class="secondary" id="next">Next</button>
+</div>
+</main>
+<script type="module" src="/js/table.js"></script>
+</body>
+</html>

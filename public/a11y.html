@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility · Bug Hunt Lab</title>
+<link rel="stylesheet" href="/css/lab.css">
+</head>
+<body>
+<main>
+<h1>Accessibility</h1>
+<div class="task">Rules: everything works with a keyboard alone · every field has a name a screen reader can announce · dialogs take focus when they open, close with Escape, and return focus when they close.</div>
+<section class="card" id="newsletter">
+  <h2>Newsletter</h2>
+  <div id="email-field"></div>
+  <p id="subscribe-slot"></p>
+  <p id="subscribe-result" role="status" data-testid="subscribe-result"></p>
+  <p><button type="button" class="secondary" id="open-terms">View terms</button></p>
+</section>
+<div id="modal-slot"></div>
+</main>
+<script type="module" src="/js/a11y.js"></script>
+</body>
+</html>

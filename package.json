@@ -1,0 +1,24 @@
+{
+  "name": "bug-hunt-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A QA practice app with switchable bugs, a reference test suite, and a scorecard that shows which bugs your tests catch.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app/server.mjs",
+    "start:buggy": "BUGS=all node app/server.mjs",
+    "test": "playwright test",
+    "test:unit": "node --test \"solutions/unit/*.test.js\"",
+    "test:solutions": "TEST_DIR=solutions/e2e playwright test",
+    "scorecard": "node scripts/scorecard.mjs",
+    "report": "playwright show-report"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.1",
+    "@playwright/test": "^1.65.1"
+  }
+}

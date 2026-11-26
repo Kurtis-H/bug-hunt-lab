@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dates · Bug Hunt Lab</title>
+<link rel="stylesheet" href="/css/lab.css">
+</head>
+<body>
+<main>
+<h1>Dates</h1>
+<div class="task">Rules: age counts whole years and goes up on the birthday · renewals land on the same day next month, or the last day of a shorter month · dates are shown in the user's own time zone exactly as entered.</div>
+<section class="card">
+  <h2>Age calculator</h2>
+  <label for="birth">Date of birth</label><input id="birth" type="date">
+  <label for="today">Today</label><input id="today" type="date">
+  <p>Age: <b data-testid="age" id="age-out">-</b></p>
+</section>
+<section class="card">
+  <h2>Subscription renewal</h2>
+  <label for="start">Start date</label><input id="start" type="date">
+  <p>Next renewal: <b data-testid="renewal" id="renewal-out">-</b></p>
+</section>
+<section class="card">
+  <h2>Delivery date</h2>
+  <label for="ship">Ship date</label><input id="ship" type="date">
+  <p data-testid="ship-message" id="ship-out">-</p>
+</section>
+</main>
+<script type="module" src="/js/dates.js"></script>
+</body>
+</html>
