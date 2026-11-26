@@ -26,6 +26,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Dependency vulnerability audit
+        run: npm audit --audit-level=high
       - run: npx playwright install --with-deps chromium
       - run: npm run test:solutions
       - name: Starter tests pass too
