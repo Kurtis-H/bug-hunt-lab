@@ -1,4 +1,4 @@
-# 🐞 Bug Hunt Lab
+# Bug Hunt Lab
 
 ![CI](https://github.com/Kurtis-H/bug-hunt-lab/actions/workflows/ci.yml/badge.svg)
 
