@@ -32,7 +32,7 @@ jobs:
       - run: npm run test:solutions
       - name: Starter tests pass too
         run: npm test
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: playwright-report
@@ -53,7 +53,7 @@ jobs:
       # The reference suite must catch 100% of bugs. If a code change accidentally
       # "fixes" a bug or makes one undetectable, this fails.
       - run: npm run scorecard -- --tests solutions/e2e --min-score 100
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: scorecard
